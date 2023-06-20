@@ -11,8 +11,8 @@ Redux is used for state management.<br/>
 Firebase is used  for authentication and backend.<br/>
 
 ## Interface
-Login with Google authentication.
-Then you see today's quotes from your people in your connection.
+Login with Google authentication.<br/>
+Then you see today's quotes from your people in your connection.<br/>
 You can view your profile where you can see your friends on click on "friends🔍".<br/>
 There you can add new friends from this platform to your connection.<br/>
 You can create a quote.<br/> 
