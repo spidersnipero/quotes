@@ -1,0 +1,110 @@
+.friendadder {
+  margin-top: 20px;
+}
+
+.navver h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-family: "Handlee", cursive;
+}
+
+.login .signin {
+  width: 10rem;
+  background-color: rgb(79, 230, 230);
+  color: rgb(255, 255, 255);
+}
+
+.profile .profilehead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.profile .profilepic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgb(79, 230, 230);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+}
+.profile .profileinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+.profile .profileinfo .profileusername {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.profile .profileinfo .profileemail {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.quoteflexer {
+  display: flex;
+  justify-content: space-between;
+}
+.quoteflexer .date {
+  font-size: 0.75rem;
+}
+.quoteflexer .remover {
+  height: 2.5rem;
+  margin: 0.5rem;
+}
+
+.firendsinfriends {
+  display: flex;
+  justify-content: space-between;
+}
+.firendsinfriends .friend-info {
+  display: flex;
+}
+.firendsinfriends .friend-info .img .p {
+  margin: 1rem;
+}
+.firendsinfriends .friendprofilepic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 1rem;
+}
+.firendsinfriends .remove {
+  height: 2.5rem;
+  margin: 0.5rem;
+}
+.firendsinfriends .add {
+  height: 2.5rem;
+  width: 3.5rem;
+  margin: 0.5rem;
+}
+
+.homequote h3 {
+  font-weight: 300;
+  font-size: 2rem;
+}
+.homequote .info {
+  display: flex;
+  align-items: center;
+  background-color: rgb(235, 235, 235);
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+.homequote .info img p {
+  margin: 0.5rem;
+}
+.homequote .info img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.yourquotes h1 {
+  font-size: 2rem;
+  font-weight: 300;
+}/*# sourceMappingURL=styles.css.map */
