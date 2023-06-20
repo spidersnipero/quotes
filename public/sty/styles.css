@@ -107,4 +107,12 @@
 .yourquotes h1 {
   font-size: 2rem;
   font-weight: 300;
+}
+
+.notfound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 55vw;
 }/*# sourceMappingURL=styles.css.map */

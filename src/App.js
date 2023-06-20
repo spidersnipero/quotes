@@ -9,6 +9,7 @@ import { Home } from "./components/home"
 import { Friends } from "./components/friends"
 import { loginActions } from "../src/store/login";
 import {IndividualQuotes} from "./components/individualquotes"
+import { NotFound } from "./components/notfound"
 
 
 
@@ -34,13 +35,13 @@ export const App = () => {
           </Route>
           <Route path="/createquote" element={<Createquote/>} />
           <Route path="/myqoutes" element={<MyQuotes />} />
-          <Route path ="*" element={<p>404 not found</p>} />
+          <Route path ="*" element={<NotFound />} />
         </Routes>
       }
       {!auth &&
         <Routes>
           <Route path="/" element={<Login/>} />
-          <Route path ="*" element={<p>404 not found</p>} />
+          <Route path ="*" element={<NotFound />} />
           </Routes>
       }
     </>
