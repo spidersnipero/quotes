@@ -33,7 +33,7 @@ export const MyQuotes = () => {
     }
     useEffect(() => {
         if(!inistialized){
-            console.log("getdocs");
+
             getdocs();
         }
     },[]);
@@ -42,8 +42,8 @@ export const MyQuotes = () => {
         <div className="container yourquotes">
             <h1 className="btn btn-lg">Your Quotes</h1>
             {personalDoc.length==0 && !loading&& <p>you have no quotes</p>}
-            {loading && <img src="https://cdn.dribbble.com/users/1186261/screenshots/3718681/_______.gif"
-                 alt="just" style={{height:"10rem"}} />}
+            {loading && <center><img src="https://cdn.dribbble.com/users/1186261/screenshots/3718681/_______.gif"
+                 alt="just" style={{height:"10rem"}} /></center>}
             {personalDoc.map((doc) => {
                 return (
                     <div key={doc.id}>

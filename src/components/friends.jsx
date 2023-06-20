@@ -10,12 +10,10 @@ export const Friends = () => {
     const navigate = useNavigate();
     const [isfinds, setisfinds] = React.useState(false);
     const fisInitialised = useSelector(state => state.profile.fisInitialised);
-    console.log(fisInitialised);
     useEffect(() => {
     if(!fisInitialised){
-        console.log("not initialised");
         navigate("/");
-    }},[]);
+    }},[navigate,fisInitialised]);
     const [finds, setfinds] = React.useState([]);
     const friends = useSelector(state => state.profile.friends)
     const profile = useSelector(state => state.profile.profile)
@@ -65,7 +63,7 @@ export const Friends = () => {
                         <FriendAdder friend={friend}/>
                     )
                 })}
-                {isfinds &&finds.length==0 && <p className="mt-3">no results found</p>}
+                {isfinds &&finds.length===0 && <p className="mt-3">no results found</p>}
             </div>
         </div>
     )

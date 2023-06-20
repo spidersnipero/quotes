@@ -14,7 +14,6 @@ export const Navbar = () => {
     const nav = useNavigate();
     const handleLogout=  async ()=> {
         const res = signOut;
-        console.log(res);
         localStorage.setItem("quoteAuth",false);
         localStorage.removeItem("qouteUser");
         localStorage.removeItem("quotesprofile");

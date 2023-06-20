@@ -26,7 +26,6 @@ export function Login() {
             const docSnap = await getDoc(docRef);
             if (docSnap.exists()) {
                 dispatch(profileActions.setprofile(docSnap.data()));
-                console.log("Document data:", docSnap.data());
             } 
             else {
                 await setDoc(doc(db, "users", user.email), data);

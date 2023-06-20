@@ -12,7 +12,6 @@ export const Home = () => {
     const navigate = useNavigate();
     const profile = useSelector(state => state.profile.profile)
     const user = useSelector(state => state.login.authcred)
-    const friends = useSelector(state => state.profile.friends)
     const fisInitialised = useSelector(state => state.profile.fisInitialised)
     const dispatch = useDispatch();
     if(profile.name === ""){
@@ -36,12 +35,9 @@ export const Home = () => {
             }
             getFriends();
         }
-    },[])
+    },[dispatch,fisInitialised,user.uid])
     const tocrequo = () => {
         navigate("/createquote");
-    }
-    const ok = () => {
-        console.log(friends);
     }
     return (
         <div className="container">
@@ -49,7 +45,7 @@ export const Home = () => {
             <h5 style={{fontWeight:"300"}}>Share your quote with the world</h5>
             <button className="btn btn-info mt-3" style={{color:"white"}} onClick={tocrequo}>feeling inspired</button>
             <div className="m-3">
-                <h3 className="m-3" onClick={ok} style={{fontWeight:"350"}}>Today's Quotes</h3>
+                <h3 className="m-3" style={{fontWeight:"350"}}>Today's Quotes</h3>
                 {!fisInitialised  &&  <img src="https://cdn.dribbble.com/users/1186261/screenshots/3718681/_______.gif"
                  alt="just" style={{height:"10rem"}} />
                 }

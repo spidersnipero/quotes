@@ -30,7 +30,7 @@ export const Profile = () => {
             <h2 style={{fontWeight:"400"}}>Profile</h2>
             <Link className="btn btn-outline-primary"  to="/profile/friends">My friends 🔍</Link>
             </div>
-            <img className="profilepic" src={profile.profileURL}/>
+            <img className="profilepic" alt="profilepic" src={profile.profileURL}/>
             <div className="profileinfo">
                 <p className="profileusername">{profile.name}</p>
                 <p className="profileemail">{profile.email}</p>

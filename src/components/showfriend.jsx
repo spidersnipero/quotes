@@ -11,7 +11,7 @@ import { quotesActions } from "../store/quotes";
 export const ShowFriend = (props) => {
     const {friend} = props;
     const [frienddoc, setfrienddoc] = React.useState({});
-    console.log(friend);
+
     const dispatch = useDispatch();
     const friends = useSelector(state => state.profile.friends)
     const authcred = useSelector(state => state.login.authcred)
@@ -46,7 +46,7 @@ export const ShowFriend = (props) => {
         <div class="card mt-2">
             <div class="card-body firendsinfriends">
                 <div className="friend-info">
-                    <img src={frienddoc.profileURL} className="friendprofilepic"/>
+                    <img src={frienddoc.profileURL} alt="profilepic" className="friendprofilepic"/>
                     <p>{frienddoc.name}</p>
                 </div>
                 <div>

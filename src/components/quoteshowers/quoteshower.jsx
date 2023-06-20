@@ -16,7 +16,6 @@ export const QuoteShower =(e)=>{
             const q = query(collection(db,"personalquotes"),where("time","==",quote.time),where("uid","==",quote.uid));
             const querySnapshot = await getDocs(q);
             querySnapshot.forEach(async(d) => {
-                console.log(doc);
                 await deleteDoc(doc(db,"personalquotes",d.id));
             });
         }

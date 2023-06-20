@@ -2,7 +2,7 @@ import React from "react";
 
 export const HomeQuoteShower = (e) => {
     const quote = e.quote;
-    console.log(quote);
+
     return (
         <div className="card m-2 homequote" key={quote.time}>
         <div className="card-body">

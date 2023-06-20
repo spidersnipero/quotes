@@ -11,7 +11,6 @@ export const FriendAdder = (props) => {
     const friends = useSelector(state => state.profile.friends)
     const authcred = useSelector(state => state.login.authcred)
     const addFriend = () => {
-        console.log(friend.email);
         if(!friends.connection.includes(friend.email)){
             const newFriends = [...friends.connection,friend.email];
             dispatch(profileActions.setfriends({connection:newFriends}));
@@ -28,7 +27,7 @@ export const FriendAdder = (props) => {
         <div class="card friendadder">
             <div class="card-body firendsinfriends">
                 <div className="friend-info">
-                    <img src={friend.profileURL} className="friendprofilepic"/>
+                    <img src={friend.profileURL} alt="profile pic" className="friendprofilepic"/>
                     <div>
                         <p>{friend.name}</p>
                         <p>{friend.email}</p>

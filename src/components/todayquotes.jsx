@@ -1,4 +1,4 @@
-import {React, useEffect,useState} from "react";
+import {React, useEffect} from "react";
 import { useSelector } from "react-redux";
 import { db } from "../firebase";
 import { collection, getDocs,doc,query, where, getDoc } from "firebase/firestore";
@@ -26,19 +26,14 @@ export const TodayQuotes = () => {
             const querySnapshot = await getDocs(q);
             if(!querySnapshot.empty){
                 querySnapshot.forEach((doc) => {
-                    console.log(doc.data());
                     dispatch(quotesActions.addquote({...doc.data(),author : userdoc.data()}));
                 })
-            }
-            else{
-                console.log("empty");
             }
         })
         dispatch(quotesActions.setinistialized(true));
     };
     useEffect(() => {
         if(!isinistialized ){
-            console.log("getting today quotes");
             gettodayquotes();
         }
     },[]);
