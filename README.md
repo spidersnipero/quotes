@@ -6,6 +6,7 @@ it is a social media platform where you share quotes every day with your friends
 ## Inspiration
 This app might be a cheap knock-off of Twitter but it is genuinely got inspired by a insta reel where a teenage boy goes up to people 
 to ask their "quote of the day" and they give a funny reply. 
+source: https://youtube.com/shorts/gjvM4ZmVTH0?feature=share
 
 ## Built structure
 The app is created with react js framework.<br/>
